@@ -2,13 +2,14 @@ body {
     font-family: 'Arial', sans-serif;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
     background-color: #FAFAD2;
     color: #333;
 }
 h1 {
     text-align: center;
     color: #4082B4;
+    font-size: 40px;
 }
 .filters {
     display: flex;
