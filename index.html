@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rick and Morty Character Explorer</h1>
+    
+    <div class="filters">
+        <input type="text" id="nameFilter" placeholder="Search by name...">
+        <select id="statusFilter">
+            <option value="">All Statuses</option>
+            <option value="alive">Alive</option>
+            <option value="dead">Dead</option>
+            <option value="unknown">Unknown</option>
+        </select>
+        <select id="speciesFilter">
+            <option value="">All Species</option>
+            <option value="Human">Human</option>
+            <option value="Alien">Alien</option>
+            <option value="Robot">Robot</option>
+            <option value="Animal">Animal</option>
+            <option value="Mythological Creature">Mythological Creature</option>
+        </select>
+        <select id="genderFilter">
+            <option value="">All Genders</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="genderless">Genderless</option>
+            <option value="unknown">Unknown</option>
+        </select>
+        <button id="searchBtn">Search</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+    
+    <div id="loading" class="loading">Loading characters...</div>
+    
+    <div id="characters" class="characters"></div>
+    
+    <div class="pagination">
+        <button id="prevBtn" disabled>Previous</button>
+        <span id="pageInfo">Page 1</span>
+        <button id="nextBtn">Next</button>
+    </div>
+    
+    <div id="characterModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    
+    <script src="./app/script.js"></script>
+</body>
+</html>
